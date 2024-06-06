@@ -40,3 +40,7 @@ poetry add inertia-django django-vite
 npm install -D @types/node
 npm install -D @inertiajs/react
 ```
+
+## References
+
+- [Django + Inertia + Vite + React で作る Web アプリの新たな選択肢](https://zenn.dev/bony_chops/articles/5c10ffabf8af7c)
