@@ -28,8 +28,15 @@ Done. Now run:
   npm run dev
 ```
 
-### Install adapter
+### Install adapter for Django
 
 ```sh
 poetry add inertia-django django-vite
+```
+
+### Install libs for React
+
+```sh
+npm install -D @types/node
+npm install -D @inertiajs/react
 ```

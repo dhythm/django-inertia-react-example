@@ -57,7 +57,7 @@ ROOT_URLCONF = "backend.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        'DIRS': [BASE_DIR / 'templates'],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -124,3 +124,18 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+INERTIA_LAYOUT = 'base.html'
+
+CSRF_HEADER_NAME = 'HTTP_X_XSRF_TOKEN'
+CSRF_COOKIE_NAME = 'XSRF-TOKEN'
+
+DJANGO_VITE_ASSETS_PATH = BASE_DIR / 'frontend' / 'dist'
+
+DJANGO_VITE_DEV_MODE = DEBUG
+
+DJANGO_VITE_DEV_SERVER_PORT = 3000
+
+STATIC_ROOT = BASE_DIR / 'static'
+
+STATICFILES_DIRS = [DJANGO_VITE_ASSETS_PATH]
