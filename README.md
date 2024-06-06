@@ -2,7 +2,7 @@
 
 ## Create environment
 
-### Setting up Django
+### Set up Django
 
 ```sh
 poetry init
@@ -11,7 +11,7 @@ django-admin startproject backend .
 poetry run python manage.py runserver 8080
 ```
 
-### Setting up React + Vite
+### Set up React + Vite
 
 ```sh
 npm create vite@latest frontend
@@ -26,4 +26,10 @@ Done. Now run:
   cd frontend
   npm install
   npm run dev
+```
+
+### Install adapter
+
+```sh
+poetry add inertia-django django-vite
 ```
