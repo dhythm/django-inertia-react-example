@@ -41,6 +41,23 @@ npm install -D @types/node
 npm install -D @inertiajs/react
 ```
 
+## Run App
+
+Run the following command in the root dir.
+
+```sh
+poetry run python manage.py runserver 8080
+```
+
+Run the following command in the `frontend` dir.
+
+```sh
+cd frontend
+npm run dev
+```
+
+Then, access to http://localhost:8080
+
 ## References
 
 - [Django + Inertia + Vite + React で作る Web アプリの新たな選択肢](https://zenn.dev/bony_chops/articles/5c10ffabf8af7c)
